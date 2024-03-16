@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:500px;
+        }
+        form {
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 8px;
+            width:400px;
+        }
+        label {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="box">
+        <form>
+            <h1 class="mb-4">Sign in</h1>
+            <div class="mb-4">
+                <label class="form-label">Email or mobile phone number</label>
+                <div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="btn btn-warning w-100">Continue</button>
+            </div>
+            <div class="mb-4">
+                <p>By Continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            </div> 
+            <div class="mb-2">
+                <details>
+                    <summary class="mb-4"><a href="#">Need Help?</a></summary>
+                    <ul>
+                        <li class="mb-3"><a href="#">Forgot Password</a></li>
+                        <li class="mb-3"><a href="#">Other issues with Sign-in</a></li>
+                    </ul>
+                </details>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>

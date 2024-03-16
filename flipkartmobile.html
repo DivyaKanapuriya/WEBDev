@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+    .product{
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        font-family: Arial;
+        margin-bottom: 30px;
+    }
+    h3{
+        color: blue;
+    }
+    h3 span{
+         margin-right: 15px;
+         color: rgb(227, 224, 224);
+    }
+    .rating{
+        background-color: green;
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .reviews{
+        margin-left: 10px;
+        color: rgb(174, 174, 174);
+    }
+    .row-2{
+        margin-left: 40px;
+    }
+    ul{
+        color: rgb(100, 98, 98);
+        margin-left: 20px;
+        list-style: none;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+    .off{
+        margin-left: 5px;
+        color: green;
+    }
+    .sale{
+        background-color: rgb(243, 181, 243);
+        text-align: center;
+        color: blueviolet;
+        padding : 3px;
+        width:120px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+   
+    <div class="product">
+        <div class="row-1">
+         <img src="../public/images/samsung.webp">
+        </div>
+            <div>
+              <div>
+               <div><h3><span class="bi bi-heart-fill"></span>SAMSUNG GALAXY F23 5G (Copper Blush, 128GB)</h3></div>
+              </div>
+                <div class="row-2"><span class="rating">4.2
+                   <span class="bi bi-star-fill"></span>
+                    </span><span class="reviews">48,850 Ratings & 4,670 Reviews</span>
+                 <div>
+                  <ul>
+                  <li> 6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                   <li>16.76 cm (6.6inch) Full HD + Display</li>
+                   <li>50mp + 8mp + 2mp | 8mp Front camera</li>
+                    <li>Qualcomm Snapdragon 750 G Processor</li>
+                    <li>1 year Warranty Provided by the manufacturer from Date of purchase</li>
+                  </ul>
+                 </div>
+                </div>
+            </div>
+            <div><h1>&#8377;13,499/-
+                <img align="right" src="../public/images/assured.png" width="40%"></h1>
+               <p><strike>&#8377;23999</strike><span class="off"><b>43% off</b></span></p>
+               <p class="sale">Sale Price Live</p>
+                <p>Upto <b>&#8377;12840/- </b>Off on Exchange</b></p>
+           </div>
+    </div>
+    <hr>
+</body>
+</html>

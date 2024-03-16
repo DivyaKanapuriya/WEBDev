@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+         function CalculateClick() {
+            var height=document.getElementById("height").value;
+            var weight=document.getElementById("weight").value;
+
+             var bmi = [weight / (height )**2]*10000;
+             document.getElementById("result").innerHTML  = "<b> BMI=" + Math.round(bmi) +  "kg/m<sup>2</sup></b>" ;
+         }
+         function ClearClick() {
+           document.getElementById("height").value = "";
+           document.getElementById("weight").value = "";
+           document.getElementById("txt").value = "";
+           document.getElementById("result").innerHTML ="";
+            
+           if ( document.getElementById("male").checked) {
+                document.getElementById("male").checked =false;
+            } else {
+                document.getElementById("female").checked= false;
+            }
+              
+         }
+    </script>
+    <style>
+        p {
+            background-color: rgb(61, 134, 223);
+            color: white;
+           
+            width: 60%;
+            padding : 10px;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        #txt {
+                border: 1px solid rgb(61, 134, 223);
+                border-radius: 4px;
+                width: 100px;
+                margin-left: 40px;
+                margin-right: 20px;
+        }
+       
+        
+        #male  {
+            margin-left: 20px;
+            border:1px solid rgb(25, 71, 127); 
+        }
+        #female {
+            margin-left: 20px;
+            border:1px solid rgb(25, 71, 127); 
+        }
+        h5 {
+            
+            background-color: rgb(98, 128, 0);
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            height: 40px;
+            padding:3px;
+        }
+        
+        #height {
+            margin-left: 20px;
+            border: 1px solid rgb(25, 71, 127);
+        }
+        #weight {
+            margin-left: 20px;
+            border: 1px solid rgb(25, 71, 127);
+        }
+         
+    </style>
+</head>
+<body class="container-fluid ms-4">
+    <header>    
+        <div>
+            <h2><b>BMI Calculator</b></h2>
+             <p class="mt-1 ">Modify the values and click the Calculate button to use</p>
+        </div>
+    </header>
+    <section>
+        <div>
+            <button>US Units</button>
+            <button onclick="unitsChange" class="btn btn-dark text-white">Metric Units</button>
+            <button>Other Units</button>
+            <div class="mt-1 p-2">
+                Age    <input type="text" id="txt" >  ages: 2-120
+            </div>
+           <form>
+                <div class="mt-1">
+                  Gender   <input type="radio" id="male" class="form-check-input" name="gender" value="Male">
+                  <label for="male">Male</label> 
+                  <input type="radio" id="female" class="form-check-input" name="gender" value="female">
+                  <label for="female">Female</label>
+                </div>
+                <div class="mt-1 border-2 ">
+                  Height <input type="text" placeholder="  cm" id="height" >
+                </div>
+                <div class="mt-2 border-2 ">
+                    weight <input type="text" placeholder="  kg" id="weight" >
+                </div>
+           </form>
+           <button onclick="CalculateClick()" class=" btn btn-primary  ms-auto mt-3 p-2"><b>Calculate</b></button>
+          <button onclick="ClearClick()"  class="btn btn-dark ms-3 mt-3 p-2 bg-gradient"> Clear </button>
+        </div>
+        <div class="mt-3 p-2 w-50">
+           <h5>Result</h5>
+           <textbox id="result"></textbox>
+        </div>
+     </section>
+</body>
+</html>

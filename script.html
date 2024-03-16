@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function VerifyMobile() {
+        var mobile = document.getElementById("Mobile");
+        var regExp =/\+91\d{10}/;
+        var mobileError = 
+        document.getElementById("mobileError");
+         if(mobile.value.match(regExp)){
+          mobileError.innerHTML="";
+          mobile.className="valid-style";
+         } else {
+          mobileError.innerHTML="Invalid Mobile".fontcolor('red');
+          mobile.className ="invalid-style";
+         }
+      }
+  </script>
+  <style>
+    .valid-style {
+      border: 1px solid green;
+      box-shadow: 2px 2px 2px green;
+    }
+    .invalid-style {
+      border: 1px solid red;
+      box-shadow: 2px 2px 2px red;
+    }
+  </style>
+</head>
+<body>
+    <dl>
+      <dt>Mobile</dt>
+        <dd><input type="text" id="Mobile" onblur="VerifyMobile()"></dd>
+        <dd id="mobileError"></dd>
+        <dt>Password</dt>
+        <dd><input type="password" onblur="VerifyPass()" id="pass"></dd>
+        <dd id="passError"></dd>
+    </dl>
+</body>
+</html>

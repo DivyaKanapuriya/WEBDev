@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        header span {
+            font-size: 18px;
+        }
+        .search-bar {
+            width: 500px;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            margin-top: 40px;
+        }
+        nav button {
+            text-align: center;
+            width: 120px;
+            font-size: 18px;
+            border:none;
+            background:none;
+            margin-bottom: 50px;
+        }
+        nav button:hover {
+            border:1px solid gray;
+        }
+        .main-row {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        main {
+            padding-left: 40px;
+        }
+        .categories {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .categories span {
+            background-color: gray;
+            color:white;    
+            border-radius: 20px;
+            padding: 5px;
+            margin-right: 30px;
+        }
+        .categories span:first-child {
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+  <header>
+     <div>
+        <span class="bi bi-justify"></span>
+        <img src="../public/images/yLogo.png" width="130">
+     </div>
+     <div>
+        <div class="search-bar">
+            <div class="input-group">
+                <input type="text" placeholder="search" size="45">
+                <button class="btn btn-outline-dark input-group-text">
+                    <span class="bi bi-search"></span>
+                </button>
+                    <span class="bi bi-mic-fill  ms-4"></span>
+           </div>
+        </div>
+     </div>
+     <div>
+        <button class="btn btn-outline-dark">
+            <span class="bi bi-person-circle"></span>
+            SIGN IN
+        </button>
+     </div>
+  </header>
+  <section>
+     <nav>
+        <button>
+            <span class="bi bi-house-fill"></span>
+            <div>Home</div>
+        </button>
+        <button>
+            <span class="bi bi-compass"></span>
+            <div>Explore</div>
+        </button>
+        <button>
+            <span class="bi bi-collection-play"></span>
+            <div>Subscriptions</div>
+        </button>
+     </nav>
+     <main>
+        <div class="categories">
+            <span>All</span>
+            <span>Music</span>
+            <span>4K Videos</span>
+            <span>Live</span>
+        </div>
+        <div class="main-row">
+            <div>
+              <iframe src="https://www.youtube.com/embed/VgGgYOzNWno"></iframe&gt;
+              <p>Ram Setu | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/6073B0sT5a0"></iframe&gt;
+             <p>Prince -Trailer(Telugu) | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/ogWhfMVCN_A"></iframe&gt;
+             <p>Kids | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+             
+             </p>
+            </div>
+        </div>
+
+        <div class="main-row">
+            <div>
+              <iframe src="https://www.youtube.com/embed/VgGgYOzNWno"></iframe&gt;
+              <p>Ram Setu | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/6073B0sT5a0"></iframe&gt;
+             <p>Prince -Trailer(Telugu) | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/ogWhfMVCN_A"></iframe&gt;
+             <p>Kids | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+             
+             </p>
+            </div>
+        </div>
+
+        <div class="main-row">
+            <div>
+              <iframe src="https://www.youtube.com/embed/VgGgYOzNWno"></iframe&gt;
+              <p>Ram Setu | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/6073B0sT5a0"></iframe&gt;
+             <p>Prince -Trailer(Telugu) | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+               
+             </p>
+            </div>
+            <div>
+             <iframe src="https://www.youtube.com/embed/ogWhfMVCN_A"></iframe&gt;
+             <p>Kids | Sivakarthikeyan | Maria | Anudeep KV | S Thaman | #PrinceOnOct21st <br>
+                Suresh Productions <br>
+             
+             </p>
+            </div>
+        </div>
+     </main>
+  </section>
+</body>
+</html>
